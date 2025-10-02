@@ -1,0 +1,268 @@
+[
+  {
+    "name": "CSS Grid",
+    "description": "A powerful 2D layout system for building responsive web designs.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 57, "year": 2017 },
+      "firefox": { "version": 52, "year": 2017 },
+      "safari": { "version": 10.1, "year": 2017 },
+      "edge": { "version": 16, "year": 2018 }
+    },
+    "keywords": ["grid", "display: grid", "grid-template", "grid-area", "grid-column", "grid-row"]
+  },
+  {
+    "name": "Flexbox",
+    "description": "A one-dimensional layout model for distributing space along a container.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 29, "year": 2013 },
+      "firefox": { "version": 28, "year": 2014 },
+      "safari": { "version": 9, "year": 2015 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["flex", "display: flex", "justify-content", "align-items", "flex-wrap"]
+  },
+  {
+    "name": "Dialog Element",
+    "description": "The <dialog> element represents a modal or non-modal dialog box.",
+    "status": { "baseline": false },
+    "support": {
+      "chrome": { "version": 37, "year": 2014 },
+      "firefox": { "version": 53, "year": 2017 },
+      "safari": { "version": 15.4, "year": 2022 },
+      "edge": { "version": 79, "year": 2020 }
+    },
+    "keywords": ["<dialog>", "showModal", "dialog.close", "dialog.show"]
+  },
+  {
+    "name": "Web Animations API",
+    "description": "Provides a JavaScript API for driving CSS animations and transitions.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 36, "year": 2014 },
+      "firefox": { "version": 48, "year": 2016 },
+      "safari": { "version": 13, "year": 2019 },
+      "edge": { "version": 79, "year": 2020 }
+    },
+    "keywords": ["animate()", "KeyframeEffect", "Animation", "Element.animate"]
+  },
+  {
+    "name": "Service Workers",
+    "description": "Scripts that run in the background to enable offline, push, and caching features.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 40, "year": 2015 },
+      "firefox": { "version": 44, "year": 2016 },
+      "safari": { "version": 11.1, "year": 2018 },
+      "edge": { "version": 17, "year": 2018 }
+    },
+    "keywords": ["serviceWorker", "navigator.serviceWorker", "self.addEventListener('fetch')"]
+  },
+  {
+    "name": "WebRTC",
+    "description": "Real-time communication of video, audio, and data in the browser.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 23, "year": 2013 },
+      "firefox": { "version": 22, "year": 2013 },
+      "safari": { "version": 11, "year": 2017 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["RTCPeerConnection", "getUserMedia", "MediaStream", "webrtc"]
+  },
+  {
+    "name": "Intersection Observer",
+    "description": "Lets code asynchronously observe changes in the intersection of elements with an ancestor or viewport.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 51, "year": 2016 },
+      "firefox": { "version": 55, "year": 2017 },
+      "safari": { "version": 12.1, "year": 2019 },
+      "edge": { "version": 15, "year": 2017 }
+    },
+    "keywords": ["IntersectionObserver", "observe", "isIntersecting"]
+  },
+  {
+    "name": "WebSockets",
+    "description": "Provides a persistent two-way communication channel between client and server.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 16, "year": 2011 },
+      "firefox": { "version": 11, "year": 2012 },
+      "safari": { "version": 6, "year": 2012 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["WebSocket", "new WebSocket", "socket.send", "socket.onmessage"]
+  },
+  {
+    "name": "Fetch API",
+    "description": "Provides a modern interface for making HTTP requests.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 42, "year": 2015 },
+      "firefox": { "version": 39, "year": 2015 },
+      "safari": { "version": 10.1, "year": 2017 },
+      "edge": { "version": 14, "year": 2016 }
+    },
+    "keywords": ["fetch", "Response", "Request", "then(response => response.json())"]
+  },
+  {
+    "name": "IndexedDB",
+    "description": "Low-level API for client-side storage of large amounts of structured data.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 24, "year": 2013 },
+      "firefox": { "version": 16, "year": 2012 },
+      "safari": { "version": 10.1, "year": 2017 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["indexedDB", "openCursor", "transaction", "objectStore"]
+  },
+  {
+    "name": "CSS Variables",
+    "description": "Custom properties that store values to be reused throughout a document.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 49, "year": 2016 },
+      "firefox": { "version": 31, "year": 2014 },
+      "safari": { "version": 9.1, "year": 2016 },
+      "edge": { "version": 15, "year": 2017 }
+    },
+    "keywords": ["var(--", "custom properties", ":root { --"]
+  },
+  {
+    "name": "WebGL",
+    "description": "JavaScript API for rendering interactive 3D and 2D graphics in the browser.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 8, "year": 2011 },
+      "firefox": { "version": 4, "year": 2011 },
+      "safari": { "version": 5.1, "year": 2011 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["WebGLRenderingContext", "canvas.getContext('webgl')", "gl.shaderSource", "gl.drawArrays"]
+  },
+
+  {
+    "name": "CSS Subgrid",
+    "description": "Allows nested grids to inherit the track sizing of a parent grid.",
+    "status": { "baseline": false },
+    "support": {
+      "chrome": { "version": 88, "year": 2021 },
+      "firefox": { "version": 71, "year": 2019 },
+      "safari": { "version": 16.4, "year": 2023 },
+      "edge": { "version": 88, "year": 2021 }
+    },
+    "keywords": ["subgrid"]
+  },
+  {
+    "name": "CSS Container Queries",
+    "description": "CSS that allows styling based on container’s size, not viewport.",
+    "status": { "baseline": false },
+    "support": {
+      "chrome": { "version": 105, "year": 2022 },
+      "firefox": { "version": 109, "year": 2023 },
+      "safari": { "version": 17, "year": 2023 },
+      "edge": { "version": 105, "year": 2022 }
+    },
+    "keywords": ["container", "@container", "container-type"]
+  },
+  {
+    "name": "CSS `:has()` selector",
+    "description": "Allows styling an element if it contains a certain child.",
+    "status": { "baseline": false },
+    "support": {
+      "chrome": { "version": 105, "year": 2022 },
+      "firefox": { "version": 117, "year": 2024 },
+      "safari": { "version": 15.4, "year": 2022 },
+      "edge": { "version": 105, "year": 2022 }
+    },
+    "keywords": [":has(", "has("]
+  },
+  {
+    "name": "Web Share API",
+    "description": "Allows web apps to invoke the native share dialog.",
+    "status": { "baseline": false },
+    "support": {
+      "chrome": { "version": 61, "year": 2017 },
+      "firefox": { "version": 99, "year": 2022 },
+      "safari": { "version": 16, "year": 2022 },
+      "edge": { "version": 79, "year": 2020 }
+    },
+    "keywords": ["navigator.share", "share("]
+  },
+  {
+    "name": "Resize Observer",
+    "description": "JavaScript API to observe changes to an element’s content rectangle size.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 64, "year": 2018 },
+      "firefox": { "version": 69, "year": 2019 },
+      "safari": { "version": 13, "year": 2019 },
+      "edge": { "version": 79, "year": 2020 }
+    },
+    "keywords": ["ResizeObserver", "observe(", "disconnect()"]
+  },
+  {
+    "name": "Promise",
+    "description": "JavaScript API for asynchronous operations using then/catch.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 32, "year": 2013 },
+      "firefox": { "version": 29, "year": 2013 },
+      "safari": { "version": 7.1, "year": 2014 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["Promise(", ".then(", ".catch("]
+  },
+  {
+    "name": "Async/Await",
+    "description": "Modern syntax for asynchronous programming in JavaScript.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 55, "year": 2017 },
+      "firefox": { "version": 52, "year": 2017 },
+      "safari": { "version": 10.1, "year": 2017 },
+      "edge": { "version": 15, "year": 2017 }
+    },
+    "keywords": ["async function", "await "]
+  },
+  {
+    "name": "Intersection Observer",
+    "description": "Already in your list, but you can enrich keywords",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 51, "year": 2016 },
+      "firefox": { "version": 55, "year": 2017 },
+      "safari": { "version": 12.1, "year": 2019 },
+      "edge": { "version": 15, "year": 2017 }
+    },
+    "keywords": ["IntersectionObserver", "observe(", "isIntersecting"]
+  },
+  {
+    "name": "Shadow DOM",
+    "description": "Encapsulation feature in Web Components allowing DOM isolation.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 53, "year": 2016 },
+      "firefox": { "version": 63, "year": 2018 },
+      "safari": { "version": 10, "year": 2016 },
+      "edge": { "version": 79, "year": 2020 }
+    },
+    "keywords": ["attachShadow", "shadowRoot", "shadow DOM"]
+  },
+  {
+    "name": "Template Element",
+    "description": "The <template> element holds HTML that is not rendered immediately.",
+    "status": { "baseline": true },
+    "support": {
+      "chrome": { "version": 8, "year": 2011 },
+      "firefox": { "version": 4, "year": 2011 },
+      "safari": { "version": 5.1, "year": 2011 },
+      "edge": { "version": 12, "year": 2015 }
+    },
+    "keywords": ["<template>", ".content", "template"]
+  }
+]
+
