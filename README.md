@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+### Baselineage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Baselineage enhances the Web Platform Baseline
+ by turning its guidelines into an interactive developer tool. It helps developers quickly understand which web features are safe to use, highlights non-baseline features in real time, and compares adoption timelines across browsers.
 
-## Available Scripts
+## 🔗 Live Demo: https://baselineage.vercel.app
 
-In the project directory, you can run:
+# ✨ Features
 
-### `npm start`
+Search Features → Find whether a web feature is Baseline-supported across major browsers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Compare Features → Side-by-side comparison of browser adoption timelines.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Code Checker (Linter) → Paste or type code, and automatically highlight non-baseline features in red, baseline features in green.
 
-### `npm test`
+Coverage Score (Planned) → Get a percentage score of baseline coverage for your code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Timeline Visualization → Animated bars showing when browsers adopted each feature.
 
-### `npm run build`
+# 🚀 Inspiration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Developers often struggle with inconsistent browser support and unclear feature stability. Baseline provides trusted information about stable features, but we wanted to go further. Baselineage brings this data into the development workflow — making it interactive, actionable, and real-time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 🛠️ Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend Framework: React + TypeScript
 
-### `npm run eject`
+Styling: TailwindCSS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Editor: CodeMirror 6 with custom linter extension
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Search: Fuzzy search with fastest-levenshtein
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Deployment: Vercel
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Data: Custom curated features.json dataset (Baseline + experimental features)
 
-## Learn More
+# ⚡ Challenges
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Handling case-sensitive imports for Vercel deployment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Cleaning and validating large JSON datasets (baseline + non-baseline features).
+
+Implementing a CodeMirror extension to highlight baseline vs non-baseline usage in real time.
+
+# 🏆 Accomplishments
+
+Built a live linter that detects unsupported features directly in code.
+
+Created an interactive comparison tool for browser adoption timelines.
+
+Packaged Baseline’s static guidelines into a tool that actively saves developer time.
+
+# 📚 What We Learned
+
+How to extend CodeMirror with custom syntax highlighting and tooltips.
+
+The importance of strict JSON validation for deployment.
+
+How to merge documentation data into usable, developer-friendly features.
+
+# 🔮 What’s Next
+
+Coverage scoring system to quantify baseline adoption in any codebase.
+
+Larger, enriched dataset (80+ features with MDN links, specs, polyfills).
+
+GitHub Action / VS Code extension for baseline linting in real projects.
