@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { distance } from "fastest-levenshtein"; // ✅ fuzzy search
+import { distance } from "fastest-levenshtein"; // 
 import featuresData from "./data/features.json";
 
 // CodeMirror + Linter
@@ -17,7 +17,7 @@ import FirefoxLogo from "./assets/firefox.svg";
 import SafariLogo from "./assets/safari.svg";
 import EdgeLogo from "./assets/edge.svg";
 
-// ✅ Your logo
+// logo
 import Logo from "./assets/logo.svg";
 import BLogo from "./assets/blogo.svg";
 
@@ -40,7 +40,6 @@ interface Feature {
   };
 }
 
-/* ---------------------- 🔴 Linter Extension ---------------------- */
 function makeLinterExtension(code: string) {
   const ranges: { from: number; to: number; message: string; baseline: boolean }[] = [];
 
@@ -63,10 +62,10 @@ function makeLinterExtension(code: string) {
     });
   });
 
-  // ✅ sort by position
+  // sort by position
   ranges.sort((a, b) => a.from - b.from);
 
-  // ✅ deduplicate (remove overlapping ranges)
+  // deduplicate (remove overlapping ranges)
   const deduped: typeof ranges = [];
   let lastEnd = -1;
   for (const r of ranges) {
@@ -144,7 +143,7 @@ function App() {
   const [animateBars, setAnimateBars] = useState(false);
   const [showWinnerInfo, setShowWinnerInfo] = useState(false);
 
-  // 🔎 Single search handler
+  // Single search handler
   const handleSearch = () => {
     const found = (featuresData as Feature[]).find((f) =>
       f.name.toLowerCase().includes(query.toLowerCase())
@@ -179,7 +178,7 @@ function App() {
     setSuggestion(null);
   };
 
-  // 🔄 Compare handler
+  // Compare handler
   const handleCompare = () => {
     const foundA = (featuresData as Feature[]).find((f) =>
       f.name.toLowerCase().includes(queryA.toLowerCase())
@@ -192,7 +191,7 @@ function App() {
     setFeatureB(foundB || null);
   };
 
-  // ✅ Checker handler
+  // Checker handler
   const handleCheckCode = () => {
     const detected = (featuresData as Feature[]).filter(
       (f) =>
@@ -209,7 +208,7 @@ function App() {
     }
   }, [featureResult, featureA, featureB, detectedFeatures]);
 
-  // 🎨 Browser colors
+  // Browser colors
   const browserColors: Record<string, string> = {
     chrome: "bg-yellow-400",
     firefox: "bg-purple-600",
@@ -221,7 +220,7 @@ function App() {
   const currentYear = 2025;
   const yearRange = currentYear - startYear;
 
-  // 🏆 Winner calculation
+  // Winner calculation
   const calculateScore = (feature: Feature) =>
     Object.values(feature.support).reduce(
       (sum, { year }) => sum + (currentYear - year),
@@ -235,7 +234,7 @@ function App() {
         : "B"
       : null;
 
-  // 📦 Feature Card
+  // Feature Card
   const FeatureCard = ({
     feature,
     highlight = false,
